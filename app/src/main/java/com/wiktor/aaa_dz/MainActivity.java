@@ -8,9 +8,10 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button button;
 
-    Person person1,person2,person3,person4;
-    Man man1,man2;
-    Woman woman1,woman2;
+    Person person1, person2, person3, person4;
+    Man man1, man2;
+    Woman woman1, woman2;
+    Human human1, human2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +31,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         woman2 = new Woman("Zhanna", 38);
 
 
+        human1 = new Man("111", 56);
+       human2 =  new Woman("")
+
+
     }
 
     @Override
     public void onClick(View v) {
 
+        man1.setWife(woman1);
 
 
         if (person2.gender.equals(Const.W)) {

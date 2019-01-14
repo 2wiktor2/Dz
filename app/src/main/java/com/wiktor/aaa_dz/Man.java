@@ -8,7 +8,7 @@ public class Man implements Human {
     private String name;
     private int age;
     private final String gender = Const.M;
-    private Person person;
+    private  Human wife;
 
 
     // конструктор
@@ -17,6 +17,11 @@ public class Man implements Human {
         this.age = age;
     }
 
+
+    public void  setWife (Human wife){
+        this.wife = wife;
+    }
+/*
     public void setWife(Person a) {
         a.getName();
         a.getAge();
@@ -27,6 +32,7 @@ public class Man implements Human {
         a.getAge();
         a.getGender();
     }
+*/
 
 
     @Override
