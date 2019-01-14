@@ -12,6 +12,17 @@ public class Woman implements Human {
         this.age = age;
     }
 
+    public void setHusband(Person a){
+        a.getName();
+        a.getAge();
+        a.getGender();
+    }
+    public void setHusband(Woman a){
+        a.getName();
+        a.getAge();
+        a.getGender();
+    }
+
     @Override
     public void getName() {
         Log.d(Const.TAG, "Имя женщины - " + name);

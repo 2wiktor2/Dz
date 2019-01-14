@@ -22,6 +22,11 @@ public class Man implements Human {
         a.getAge();
         a.getGender();
     }
+    public void setWife(Woman a) {
+        a.getName();
+        a.getAge();
+        a.getGender();
+    }
 
 
     @Override

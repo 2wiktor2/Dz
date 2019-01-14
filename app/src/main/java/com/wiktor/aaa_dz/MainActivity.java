@@ -8,9 +8,9 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button button;
 
-    Person person2;
-    Man man2;
-
+    Person person1,person2,person3,person4;
+    Man man1,man2;
+    Woman woman1,woman2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button = findViewById(R.id.button);
         button.setOnClickListener(this);
 
-        person2 = new Person("Zulfiya", 19, "Женский");
+        person1 = new Person("Susanna", 27, Const.W);
+        person2 = new Person("Zulfiya", 19, Const.W);
+        person3 = new Person("Raul", 27, Const.M);
+        person4 = new Person("Wolfgang", 105, Const.M);
+        man1 = new Man("Pol", 15);
         man2 = new Man("Grigoriy", 33);
+        woman1 = new Woman("Anna", 55);
+        woman2 = new Woman("Zhanna", 38);
 
 
     }
@@ -30,10 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
 
-        man2.getName();
-        man2.getAge();
-        man2.getGender();
-        if (person2.gender.equals("Женский")) {
+
+        if (person2.gender.equals(Const.W)) {
             man2.setWife(person2);
         } else {
             System.out.println("Педики");
