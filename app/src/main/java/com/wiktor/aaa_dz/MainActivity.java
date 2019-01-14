@@ -2,6 +2,7 @@ package com.wiktor.aaa_dz;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -31,8 +32,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         woman2 = new Woman("Zhanna", 38);
 
 
-        human1 = new Man("111", 56);
-       human2 =  new Woman("")
+        human1 = new Man("Christian", 56);
+       human2 =  new Woman("Ursula", 32);
 
 
     }
@@ -41,13 +42,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
         man1.setWife(woman1);
+        if (woman2 instanceof Woman){
+            woman2.getName();
+            woman2.getAge();
+            woman2.getGender();
+        } else Log.d(Const.TAG, "Неправильно");
 
 
+        woman2.setHusband(man2);
+/*
         if (person2.gender.equals(Const.W)) {
             man2.setWife(person2);
         } else {
             System.out.println("Педики");
         }
+*/
 
 
     }
