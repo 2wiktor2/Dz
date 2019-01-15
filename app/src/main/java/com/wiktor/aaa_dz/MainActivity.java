@@ -42,10 +42,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
 
         man1.setWife(woman1);
-        if (woman2 instanceof Woman){
-            woman2.getName();
-            woman2.getAge();
-            woman2.getGender();
+        if (woman1 instanceof Woman){
+            woman1.getName();
+            woman1.getAge();
+            woman1.getGender();
         } else Log.d(Const.TAG, "Неправильно");
 
 

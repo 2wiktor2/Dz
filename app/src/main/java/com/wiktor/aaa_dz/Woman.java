@@ -6,7 +6,7 @@ public class Woman implements Human {
     private String name;
     private int age;
     private final String gender = Const.W;
-     Human husband;
+    Human husband;
 
     Woman(String name, int age) {
         this.name = name;
@@ -14,7 +14,8 @@ public class Woman implements Human {
     }
 
     public void setHusband(Human husband) {
-        this.husband = husband;}
+        this.husband = husband;
+    }
 
 /*        public void setHusband (Person a){
             a.getName();
@@ -27,19 +28,19 @@ public class Woman implements Human {
             a.getGender();
         }*/
 
-        @Override
-        public void getName () {
-            Log.d(Const.TAG, "Имя женщины - " + name);
-        }
-
-        @Override
-        public void getAge () {
-            Log.d(Const.TAG, "Возраст женщины - " + age);
-        }
-
-        @Override
-        public void getGender () {
-            Log.d(Const.TAG, "Пол - " + Const.W);
-        }
+    @Override
+    public void getName() {
+        Log.d(Const.TAG, "Имя женщины - " + name);
     }
+
+    @Override
+    public void getAge() {
+        Log.d(Const.TAG, "Возраст женщины - " + age);
+    }
+
+    @Override
+    public void getGender() {
+        Log.d(Const.TAG, "Пол - " + Const.W);
+    }
+}
 
