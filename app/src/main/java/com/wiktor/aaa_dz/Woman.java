@@ -5,7 +5,6 @@ import android.util.Log;
 public class Woman implements Human {
     private String name;
     private int age;
-    private final String gender = Const.W;
     Human husband;
 
     Woman(String name, int age) {
@@ -16,17 +15,6 @@ public class Woman implements Human {
     public void setHusband(Human husband) {
         this.husband = husband;
     }
-
-/*        public void setHusband (Person a){
-            a.getName();
-            a.getAge();
-            a.getGender();
-        }
-        public void setHusband (Woman a){
-            a.getName();
-            a.getAge();
-            a.getGender();
-        }*/
 
     @Override
     public void getName() {

@@ -7,7 +7,6 @@ public class Man implements Human {
 
     private String name;
     private int age;
-    private final String gender = Const.M;
     Human wife;
 
 
@@ -21,18 +20,6 @@ public class Man implements Human {
     public void  setWife (Human wife){
         this.wife = wife;
     }
-/*
-    public void setWife(Person a) {
-        a.getName();
-        a.getAge();
-        a.getGender();
-    }
-    public void setWife(Woman a) {
-        a.getName();
-        a.getAge();
-        a.getGender();
-    }
-*/
 
 
     @Override
