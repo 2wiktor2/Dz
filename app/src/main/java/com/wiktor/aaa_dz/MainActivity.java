@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         human1 = new Man("Christian", 56);
        human2 =  new Woman("Ursula", 32);
 
+       /* Переменая суперкласса может
+        ссылаться на объект подкласса
+        Ссылочной переменной из суперкласса может быть присвоена ссылка на любой
+        подкласс, производный от этого суперкласса.*/
 
     }
 
